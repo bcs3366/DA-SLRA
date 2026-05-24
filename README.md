@@ -20,13 +20,13 @@ export CUDA_VISIBLE_DEVICES=0 && python -W ignore run.py --task 'itr_rsicd_geo' 
 - RSITMD:
 ```
 export CUDA_VISIBLE_DEVICES=0 && python -W ignore run.py --task 'itr_rsitmd_vit' --dist 'gpu0' --config 'configs/Retrieval_rsitmd_vit.yaml' --output_dir './checkpoints/full_rsitmd_vit'
-export CUDA_VISIBLE_DEVICES=0 && python -W ignore run.py --task 'itr_rsitmd_geo' --dist 'gpu0' --config 'configs/Retrieval_rsitmd_geo.yaml' --output_dir './checkpoints/HARMA/full_rsitmd_geo'
+export CUDA_VISIBLE_DEVICES=0 && python -W ignore run.py --task 'itr_rsitmd_geo' --dist 'gpu0' --config 'configs/Retrieval_rsitmd_geo.yaml' --output_dir './checkpoints/full_rsitmd_geo'
 ```
 ## Evaluation
 For model evaluation, you can activate the evaluation function by defining `if_evaluation: True` in config files, or directly use the `--evaluate` command line flag.
 For example:
 ```
-export CUDA_VISIBLE_DEVICES=0 && python -W ignore run.py --task itr_rsicd_vit --dist f2 --config configs/Retrieval_rsicd_vit.yaml --output_dir "/root/autodl-tmp/DA-SGLR/outputs/test" --checkpoint "/root/autodl-tmp/DA-SGLR/checkpoints/full_rsicd_vit/checkpoint_best.pth" --evaluate
+export CUDA_VISIBLE_DEVICES=0 && python -W ignore run.py --task itr_rsicd_vit --dist f2 --config configs/Retrieval_rsicd_vit.yaml --output_dir "/root/autodl-tmp/DA-SLRA/outputs/test" --checkpoint "/root/autodl-tmp/DA-SLRA/checkpoints/full_rsicd_vit/checkpoint_best.pth" --evaluate
 ```
 
 
