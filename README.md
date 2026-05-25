@@ -4,13 +4,13 @@ This repository maintains the official implementation of the paper Difficulty-Aw
 ` pip install -r requirements.txt `
 ## Datasets
 All experiments are conducted on RSICD and RSITMD. Download the images from Hugging Face.
-- RSICD: https://doi.org/10.1109/TGRS.2017.2776321
-- RSITMD: https://doi.org/10.1109/TGRS.2021.3078451
+- RSICD: https://github.com/201528014227051/RSICD_optimal
+- RSITMD: https://github.com/xiaoyuan1996/AMFMN/tree/master/RSITMD
 
 Annotation files are stored in the `.data/finetune` directory and
 Modify the `image_root` parameter in YAML configuration files at `configs/*.yaml` to match your local file path.
 ## Training
-Retrieve the pre-trained GeoRSCLIP model through [the attached link](https://huggingface.co/Zilun/GeoRSCLIP/blob/main/ckpt/RS5M_ViT-B-32_RET-2.pt), then place the downloaded checkpoint in the `open_clip/pretrain/` folder.
+Retrieve the pre-trained GeoRSCLIP model through [the link](https://huggingface.co/Zilun/GeoRSCLIP/blob/main/ckpt/RS5M_ViT-B-32_RET-2.pt), then place the downloaded checkpoint in the `open_clip/pretrain/` folder.
 Execute the commands below to launch training on corresponding datasets.
 - RSICD:
 ```
